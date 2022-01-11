@@ -1,0 +1,196 @@
+html{
+    background: #FFF1D5;
+    font-family: Arial;
+}
+
+img {
+    margin-top: 5%;
+}
+/* Forms */
+.afsp_index{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border: black;
+}
+.button-one{
+    height: 10%;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.registratie{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+/* end of Forms */
+
+/* General styling */
+table {
+    display: table;
+    width: auto;
+    border: black;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background: #8C7AA9;
+    border-style: hidden;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 75%;
+}
+button:hover {
+    background:#DC6BAD;
+}
+
+h1{
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.main-text{
+    font-family: Arial;
+    font-size: 4.5em;
+    color: #69A3A2;
+    margin-top: 1.5em;
+    margin-bottom: 7.5em; /* 1em = 16 pixels */
+}
+
+/* end of General Styling */
+
+/* Homescreen wrappers */
+img {
+    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.wrapper{
+    margin-top: 25px;
+    margin-left: 120px;
+}
+
+.main-wrapper1{
+    background: #F7B32A;
+    float: right;
+    display: flex;
+    /* border-radius: 30px; */
+    justify-content: space-between;
+    z-index: 0;
+   /* border-style: dashed; */
+    width: 75%;
+    height: 95%;
+}
+.main-wrapper-div1{
+    /* border-style: dashed; */
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.main-wrapper-div2{
+    /* border-style: dashed; */
+    position: absolute;
+    background: #F7B32A;
+    display: flex;
+    justify-content: left;
+    max-height: 500px;
+    margin-right: 20px;
+}
+.home-img{
+    position: relative;
+}
+
+.second-wrapper2{
+    display: flex;
+    justify-content: center;
+    /* border-radius: 30px; */
+    z-index: 1;
+    /* border-style: dashed; */
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+.second-wrapper-div1 {
+    /* border-style: dashed; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+}
+.second-wrapper-div2, .second-wrapper-div3, .second-wrapper-div4{
+    /* border-style: dashed; */
+    background: white;
+    margin-right: 25px;
+    margin-top: 55%;
+    max-width: 250px;
+    width: 240px;
+    color: #69A3A2;
+    height: 375px;
+    /*max-height: 260px; */
+    display: flex;
+    justify-content: right;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+.button-one{
+    border: 1px #CCCCCC;
+    background: #0044AB;
+    width: 175px;
+    height: 50px;
+    margin-top: 2.5em;
+}
+/* end of Homescreen wrappers */
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 120px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    opacity: 0.9;
+    z-index: 0;/* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #0044AB; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav input {
+    font-family: Arial, bold;
+    color: white;
+    width: 7em;
+    height: 2em;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 8px 6px 16px;
+    margin: 0 0 1em 0.5em;
+    border: none;
+    background: #7D2C22;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav input:hover {
+    font-family: Arial;
+    background: #FC5A44;
+}
+
+
