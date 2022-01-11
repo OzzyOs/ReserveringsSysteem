@@ -46,11 +46,11 @@ if (isset($_POST['submit'])) {
 <body>
 <h1>Welkom bij [INSERT NAME]</h1>
 <nav class="sidenav">
-    <button onclick="location.href='index.php'">Home</button>
-    <button onclick="location.href='registratie.php'">Afspraak</button>
-    <button onclick="location.href='login.php'">Login</button>
-    <button onclick="location.href='contact.php'">Contact</button>
-    <button onclick="location.href='afspraken.php'">Afspraken</button>
+    <input type="button" value="Home" onclick="location.href='index.php'">
+    <input type="button" value="Afspraak" onclick="location.href='registratie.php'">
+    <input type="button" value="Login" onclick="location.href='login.php'">
+    <input type="button" value="Contact" onclick="location.href='contact.php'">
+    <input type="button" value="Afspraken" onclick="location.href='afspraken.php'">
 </nav>
 <div class="registratie">
 <form action="" method="post">
