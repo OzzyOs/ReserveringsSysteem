@@ -13,9 +13,11 @@ img {
     margin-top: 25px;
     border: black;
 }
+
 .button-one{
     height: 10%;
 }
+
 .contact {
     display: flex;
     justify-content: center;
@@ -97,6 +99,7 @@ img {
     width: 75%;
     height: 95%;
 }
+
 .main-wrapper-div1{
     /* border-style: dashed; */
     display: flex;
@@ -112,6 +115,7 @@ img {
     max-height: 500px;
     margin-right: 20px;
 }
+
 .home-img{
     position: relative;
 }
@@ -126,22 +130,26 @@ img {
     height: 100%;
     margin-left: 5%;
 }
+
 .second-wrapper-div1 {
     /* border-style: dashed; */
-    position: relative;
+    position: absolute;
+    top: 31em;
     display: flex;
     justify-content: space-between;
-    margin-left: 1%;
+
 }
+
 .second-wrapper-div2, .second-wrapper-div3, .second-wrapper-div4{
     /* border-style: dashed; */
     background: white;
-    margin-right: 25px;
-    margin-top: 55%;
+    /* margin-right: 25px;
+    margin-top: 55%; */
+    margin: 0 0.5em 0 0;
     max-width: 250px;
     width: 240px;
     color: #69A3A2;
-    height: 375px;
+    height: 23.4375em;
     /*max-height: 260px; */
     display: flex;
     justify-content: right;
@@ -149,6 +157,26 @@ img {
     border-width: thin;
     text-align: center;
 }
+
+.second-wrapper-div5{
+    background: #FFC95C;
+    position: absolute;;
+    right: 3%;
+    top: 30em;
+    height: 26em;
+    width: 31em;
+    margin-bottom: 1%;
+}
+
+.info-text{
+    font-family: Arial;
+    font-size: 1em;
+    color: #69A3A2;
+    margin-top: 1.5em;
+    margin-bottom: 7.5em; /* 1em = 16 pixels */
+    margin-left: 1.5em;
+}
+
 .button-one{
     border: 1px #CCCCCC;
     background: #0044AB;
