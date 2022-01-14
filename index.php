@@ -27,32 +27,41 @@
                 <p class="main-text">DEBBY JORIS COACHING
                 </p><br>
             </div>
+
     </div>
 
     <div class="second-wrapper2">
+
             <div class="second-wrapper-div1">
+
                 <div class="second-wrapper-div2">
-                    <p>
                     <img src="includes/background.png" height="100px" width="220px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mattis libero. Nam fringilla, sem nec lacinia iaculis, risus diam posuere lectus, eget porta erat metus a magna.
-                <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
-                    </p>
-            </div>
-            <div class="second-wrapper-div3">
-                <p>
+                        <p>TRAJECT</p>
+                            <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
+                </div>
+
+                <div class="second-wrapper-div3">
                     <img src="includes/background.png" height="100px" width="220px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mattis libero. Nam fringilla, sem nec lacinia iaculis, risus diam posuere lectus, eget porta erat metus a magna.
-                    <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
-                </p>
-            </div>
+                        <p>TRAJECT </p>
+                            <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
+                </div>
+
                 <div class="second-wrapper-div4">
-                <p>
                     <img src="includes/background.png" height="100px" width="220px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mattis libero. Nam fringilla, sem nec lacinia iaculis, risus diam posuere lectus, eget porta erat metus a magna.
-                    <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
-                </p>
+                        <p>TRAJECT</p>
+                            <!-- <img src="includes/background.png" height="100px" width="220px"> -->
+                            <div class="button-wrapper">
+                                <input class="button-one" type="button" value="Afspraken" onclick="location.href='contact.php'">
+                    </div>
+                </div>
+
+                <div class="second-wrapper-div5">
+                    <p class="info-text">
+                        INFO
+                    </p>
                 </div>
             </div>
+
     </div>
 </div>
 </body>
