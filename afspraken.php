@@ -72,6 +72,8 @@ mysqli_close($db);
             <td><?= $reserveringen['lastname']?></td>
             <td><?= $reserveringen['email'] ?></td>
             <td><a href="delete.php?id=<?= $reserveringen['id'] ?>">Delete</a></td>
+            <td><a href="edit.php?id=<?= $reserveringen['id'] ?>">Update</a></td>
+
 
         </tr>
     <?php } ?>
