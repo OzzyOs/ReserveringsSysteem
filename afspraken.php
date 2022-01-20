@@ -1,23 +1,23 @@
 <?php
-
+session_start();
 // Gegevens voor de connectie
 /** @var $db */
 include_once 'includes/database_connection.php';                // Stap 2: Foutafhandeling. Als verbinding niet gelukt is, wordt
-                                                             //"or die" uitgevoerd. Deze stopt de code en toont de
-                                                             // foutmelding op het scherm
+//"or die" uitgevoerd. Deze stopt de code en toont de
+// foutmelding op het scherm
 
 // Stap 3: Query naar de database opbouwen. Het is belangrijk dat dit
 //         apart gebeurt zodat je deze apart kunt tonen
 
 $query = "SELECT * FROM Reserveringen"; // Stap 4: Query uitvoeren op de database. Als dit goed gaat, geeft
-                                        //mysqli_query een mysqli_result terug. Let op, dit is een tabel.
+//mysqli_query een mysqli_result terug. Let op, dit is een tabel.
 
 // Stap 5: Foutafhandeling. Als de query niet uitgevoerd kan worden treedt
 //         er een foutmelding op via "or die". Ook de query, met ingevulde
 //         variabelen, wordt op het scherm getoond. Deze kan je kopieren
 //         en plakken in PhpMyAdmin om te kijken waarom het fout gaat.
 $result = mysqli_query($db, $query)
-or die('Error ' . mysqli_error($db) . ' with query ' . $query);
+or die('Error ' . mysqli_error($db) . ' with query ' . $query); //De pagina laadt niet en je krijgt een error, het is ook wel een exit functie.
 
 // Stap 6: Resultaat verwerken. Er wordt een nieuwe array gemaakt waarin alle
 //         rijen uit de db komen. In dit geval is een rij een album.
@@ -54,31 +54,35 @@ mysqli_close($db);
     <input type="button" value="Afspraak" onclick="location.href='registratie.php'">
     <input type="button" value="Login" onclick="location.href='login.php'">
     <input type="button" value="Contact" onclick="location.href='contact.php'">
-    <input type="button" value="Afspraken" onclick="location.href='afspraken.php'">
+
+    <?php if(isset($_SESSION['loggedInUser'])) : ?>
+        <input type="button" value="Logout" onclick="location.href='logout.php'">
+    <?php endif ; ?>
+
 </nav>
 <form action="" method="post">
-<table class="afsp_index">
-    <tbody>
-<tr>
-    <th>Voornaam</th>
-    <th>Achternaam</th>
-    <th>Email</th>
-</tr>
-
-<?php
-    foreach ($reserveringen as $reserveringen) { ?>
+    <table class="afsp_index">
+        <tbody>
         <tr>
-            <td><?= $reserveringen['firstname'] ?></td>
-            <td><?= $reserveringen['lastname']?></td>
-            <td><?= $reserveringen['email'] ?></td>
-            <td><a href="delete.php?id=<?= $reserveringen['id'] ?>">Delete</a></td>
-            <td><a href="edit.php?id=<?= $reserveringen['id'] ?>">Update</a></td>
-
-
+            <th>Voornaam</th>
+            <th>Achternaam</th>
+            <th>Email</th>
         </tr>
-    <?php } ?>
-    </tbody>
-</table>
+
+        <?php
+        foreach ($reserveringen as $reserveringen) { ?>
+            <tr>
+                <td><?= $reserveringen['firstname'] ?></td>
+                <td><?= $reserveringen['lastname']?></td>
+                <td><?= $reserveringen['email'] ?></td>
+                <td><a href="delete.php?id=<?= $reserveringen['id'] ?>">Delete</a></td>
+                <td><a href="edit.php?id=<?= $reserveringen['id'] ?>">Update</a></td>
+
+
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
 </form>
 </body>
 </html>

@@ -5,8 +5,8 @@ require_once 'includes/database_connection.php';
 
 if (isset($_POST['submit'])) {
     $firstName = mysqli_escape_string($db, $_POST['firstName']); //Beveiligd tegen SQL Injections.
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
+    $lastName = mysqli_escape_string($db, $_POST['lastName']);
+    $email = mysqli_escape_string($db, $_POST['email']);
 
     $errors = [];
     if ($firstName == "") {
@@ -49,7 +49,6 @@ if (isset($_POST['submit'])) {
     <input type="button" value="Home" onclick="location.href='index.php'">
     <input type="button" value="Afspraak" onclick="location.href='registratie.php'">
     <input type="button" value="Login" onclick="location.href='login.php'">
-    <input type="button" value="Contact" onclick="location.href='contact.php'">
     <input type="button" value="Afspraken" onclick="location.href='afspraken.php'">
 </nav>
 <div class="registratie">
